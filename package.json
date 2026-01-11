@@ -1,0 +1,21 @@
+{
+  "name": "dd10-dara-agent",
+  "version": "1.0.0",
+  "description": "Deep Diligent Agent - Modular AI research toolkit combining DARA and DD10",
+  "main": "interface/cli.js",
+  "type": "module",
+  "scripts": {
+    "start": "node interface/cli.js",
+    "test": "node tests/run_tests.js"
+  },
+  "keywords": ["ai", "research", "agent", "dara", "deep-research"],
+  "author": "Mac",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.77.0",
+    "dotenv": "^16.4.7",
+    "chalk": "^5.3.0",
+    "ora": "^8.1.1",
+    "inquirer": "^12.3.0"
+  }
+}
