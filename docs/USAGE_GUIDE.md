@@ -1,4 +1,4 @@
-# DD10/DARA Usage Guide
+# DIDI/DARA Usage Guide
 
 ## When to Use Each Module
 
@@ -15,7 +15,7 @@ Runs a comprehensive 6-phase research process with evidence-based analysis, qual
 - ✅ You need high-quality, professional-grade output
 
 **When NOT to use it:**
-- ❌ You only need specific insights (use individual DD10 modules instead)
+- ❌ You only need specific insights (use individual DIDI modules instead)
 - ❌ You already have preliminary research done
 - ❌ You're focused purely on audience research (use DARA mode)
 - ❌ You want to minimize token usage (this is the most comprehensive module)
@@ -32,12 +32,12 @@ Runs a comprehensive 6-phase research process with evidence-based analysis, qual
 
 **Workflow 2: Quick Market Research**
 1. Complete Deep Research Agent
-2. DD10: Deep Intelligence
-3. DD10: Deep Synthesis
+2. DIDI: Deep Intelligence
+3. DIDI: Deep Synthesis
 
 **Workflow 3: Quality-Checked Audience Research**
 1. DARA: All 5 modules
-2. DD10: Deep Quality Review (validates DARA output)
+2. DIDI: Deep Quality Review (validates DARA output)
 
 ---
 
@@ -58,15 +58,15 @@ Runs a comprehensive 6-phase research process with evidence-based analysis, qual
 
 ---
 
-## DD10 Mode
+## DIDI Mode
 
-**Use DD10 when:**
+**Use DIDI when:**
 - You need deep analysis on a specific dimension
 - You want modular research (pick only what you need)
 - You're doing strategic business research
 - You need executive-grade insights
 
-**Individual DD10 modules:**
+**Individual DIDI modules:**
 
 - **Deep Reasoning**: Multi-step logical analysis
 - **Deep Interpretation**: Understanding context and intent
@@ -84,12 +84,12 @@ Runs a comprehensive 6-phase research process with evidence-based analysis, qual
 ## Custom Mode
 
 **Use Custom when:**
-- You want to mix DARA and DD10 modules
+- You want to mix DARA and DIDI modules
 - You have a specific workflow in mind
 - You want to optimize for cost (select only essential modules)
 - You're experimenting with different combinations
 
-**Pro tip:** Start with Complete Deep Research Agent, then add specific DARA or DD10 modules as needed.
+**Pro tip:** Start with Complete Deep Research Agent, then add specific DARA or DIDI modules as needed.
 
 ---
 
@@ -101,13 +101,13 @@ Runs a comprehensive 6-phase research process with evidence-based analysis, qual
 |-------------|--------|------|
 | Complete Deep Research Agent | ~6,500 | ~$0.003 |
 | Full DARA chain (5 modules) | ~16,700 | ~$0.006 |
-| Individual DD10 module | ~3,000 | ~$0.001 |
-| Full DD10 (all 11 modules) | ~36,500 | ~$0.014 |
+| Individual DIDI module | ~3,000 | ~$0.001 |
+| Full DIDI (all 11 modules) | ~36,500 | ~$0.014 |
 
 **Recommended for budget-conscious users:**
 - Use Complete Deep Research Agent for preliminary research
 - Select only essential individual modules
-- Avoid running all DD10 modules unless necessary
+- Avoid running all DIDI modules unless necessary
 
 ---
 
@@ -124,11 +124,11 @@ Runs a comprehensive 6-phase research process with evidence-based analysis, qual
    - No → Continue to step 3
 
 3. **Do you need specific insights?**
-   - Yes → Use DD10 mode and select individual modules
+   - Yes → Use DIDI mode and select individual modules
    - No → Use Custom mode and mix as needed
 
 4. **Do you want to combine workflows?**
    - Yes → Use Custom mode:
      - Complete Deep Research Agent → DARA modules
-     - DARA modules → DD10 Quality Review
-     - Complete Deep Research Agent → Specific DD10 modules
+     - DARA modules → DIDI Quality Review
+     - Complete Deep Research Agent → Specific DIDI modules
