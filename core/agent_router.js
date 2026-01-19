@@ -7,7 +7,7 @@ export class AgentRouter {
   constructor() {
     this.modes = {
       DARA: 'dara',
-      DD10: 'dd10',
+      DIDI: 'didi',
       CUSTOM: 'custom'
     };
   }
@@ -28,7 +28,7 @@ export class AgentRouter {
     }
 
     if (input.researchType || input.modules) {
-      return this.modes.DD10;
+      return this.modes.DIDI;
     }
 
     // Default to DARA
@@ -52,9 +52,9 @@ export class AgentRouter {
         }
         return { success: true };
 
-      case this.modes.DD10:
+      case this.modes.DIDI:
         if (!input.topic) {
-          return { success: false, message: 'DD10 mode requires a topic' };
+          return { success: false, message: 'DIDI mode requires a topic' };
         }
         return { success: true };
 
@@ -86,12 +86,12 @@ export class AgentRouter {
           'strategic_synthesis'
         ];
 
-      case this.modes.DD10:
+      case this.modes.DIDI:
         // If specific modules requested, use those
         if (input.modules && input.modules.length > 0) {
           return input.modules;
         }
-        // Otherwise, return all DD10 modules (including the Complete Agent)
+        // Otherwise, return all DIDI modules (including the Complete Agent)
         return [
           'deep_research_complete',
           'deep_reasoning',

@@ -67,19 +67,19 @@ Synthetic customers/data are **AI-generated proxies that emulate human behavior,
    4. Simulate inquiry/testing (DARA Module 4)
    5. Synthesize strategic recommendations (DARA Module 5)
 
-✅ **DD10 as enhancement layer** - Aligns with "layering insights" approach Bain describes
+✅ **DIDI as enhancement layer** - Aligns with "layering insights" approach Bain describes
 
 ✅ **Iterative deepening** - Industry uses synthetic data for rapid iteration before final validation
 
 ### Where Mac's Concept Needs Adjustment
 
-⚠️ **DD10 positioning** - Current setup treats DD10 as separate "deep research" mode. Better approach:
-   - DD10 modules should be **quality checks** and **enhancement tools**
+⚠️ **DIDI positioning** - Current setup treats DIDI as separate "deep research" mode. Better approach:
+   - DIDI modules should be **quality checks** and **enhancement tools**
    - Run BEFORE DARA (to gather baseline data)
    - Run AFTER DARA (to validate/deepen findings)
    - NOT a separate workflow
 
-⚠️ **Redundancy risk** - Some DD10 modules (Deep Intelligence, Deep Synthesis) overlap with DARA's core functions
+⚠️ **Redundancy risk** - Some DIDI modules (Deep Intelligence, Deep Synthesis) overlap with DARA's core functions
 
 ⚠️ **User confusion** - Having 16 separate modules is overwhelming. Industry tools focus on **workflows**, not individual modules.
 
@@ -91,7 +91,7 @@ Synthetic customers/data are **AI-generated proxies that emulate human behavior,
 
 **Behind the scenes:**
 1. **Pre-Research Phase** (Optional, user-triggered)
-   - Run DD10 "Complete Deep Research Agent" to gather baseline market data
+   - Run DIDI "Complete Deep Research Agent" to gather baseline market data
    - Or user provides their own baseline data
 
 2. **DARA Core Workflow** (Always runs)
@@ -102,16 +102,16 @@ Synthetic customers/data are **AI-generated proxies that emulate human behavior,
    - Module 5: Strategic Synthesis
 
 3. **Post-Research Enhancement** (Optional, user-selects specific modules)
-   - DD10: Deep Quality Review (validate findings)
-   - DD10: Deep Signal Detection (identify patterns)
-   - DD10: Deep Reasoning (test assumptions)
-   - DD10: Deep Synthesis (cross-domain insights)
+   - DIDI: Deep Quality Review (validate findings)
+   - DIDI: Deep Signal Detection (identify patterns)
+   - DIDI: Deep Reasoning (test assumptions)
+   - DIDI: Deep Synthesis (cross-domain insights)
 
 ### Memory/Artifact System
 
 **Critical for iterative research:**
 - Each DARA report becomes an "artifact"
-- User can run DD10 modules ON the artifact
+- User can run DIDI modules ON the artifact
 - Results are appended to the artifact
 - User builds a comprehensive research document over time
 
@@ -119,6 +119,6 @@ This matches how professionals actually work: Start broad → Generate personas 
 
 ## Bottom Line
 
-Mac's instinct is correct: **DARA should be the star, DD10 should be the supporting cast.**
+Mac's instinct is correct: **DARA should be the star, DIDI should be the supporting cast.**
 
 The future of synthetic data is about **augmented workflows**, not module selection. Users want to say "research this audience" and get a comprehensive report, with the option to go deeper if needed.

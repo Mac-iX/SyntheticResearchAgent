@@ -1,8 +1,8 @@
-# Privacy Policy for DD10/DARA
+# Privacy Policy for DIDI/DARA
 
 **Last Updated:** January 15, 2026
 
-Quality Creative Consulting, LLC ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our Deep Diligent Agent (DD10/DARA) platform ("the Service").
+Quality Creative Consulting, LLC ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our Deep Diligent Agent (DIDI/DARA) platform ("the Service").
 
 ## 1. Information We Collect
 
@@ -11,7 +11,7 @@ Quality Creative Consulting, LLC ("we," "us," or "our") is committed to protecti
 - **Session Data:** We temporarily store your research inputs (topic, region, notes) and module selections in your browser's session storage. This data is deleted when you close your browser tab.
 - **Usage Analytics (Anonymous):** We collect anonymous usage data to improve the Service, including:
   - Page views
-  - Mode selections (DARA, DD10, Custom)
+  - Mode selections (DARA, DIDI, Custom)
   - Modules selected
   - Research completion status (success/failure)
   - This data is aggregated and cannot be used to identify you personally.

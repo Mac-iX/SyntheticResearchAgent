@@ -10,17 +10,17 @@ console.log('🧪 Testing Complete Deep Research Agent Module...\n');
 const router = new AgentRouter();
 const promptEngine = new PromptEngine();
 
-// Test 1: Check if module is in DD10 sequence
-console.log('Test 1: Module in DD10 sequence');
-const dd10Modules = router.getModuleSequence('dd10', {});
-const hasCompleteAgent = dd10Modules.includes('deep_research_complete');
+// Test 1: Check if module is in DIDI sequence
+console.log('Test 1: Module in DIDI sequence');
+const didiModules = router.getModuleSequence('didi', {});
+const hasCompleteAgent = didiModules.includes('deep_research_complete');
 console.log(`  Complete Agent in sequence: ${hasCompleteAgent ? '✓ PASS' : '✗ FAIL'}`);
-console.log(`  Position: ${dd10Modules.indexOf('deep_research_complete') + 1} of ${dd10Modules.length}`);
+console.log(`  Position: ${didiModules.indexOf('deep_research_complete') + 1} of ${didiModules.length}`);
 
 // Test 2: Load the Complete Agent prompt
 console.log('\nTest 2: Load Complete Agent prompt');
 try {
-  const prompt = promptEngine.loadPromptTemplate('deep_research_complete', 'dd10');
+  const prompt = promptEngine.loadPromptTemplate('deep_research_complete', 'didi');
   if (prompt) {
     console.log('  ✓ PASS - Prompt loaded successfully');
     console.log(`  Prompt length: ${prompt.length} characters`);

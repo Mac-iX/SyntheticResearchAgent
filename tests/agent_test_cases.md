@@ -37,13 +37,13 @@
 
 ---
 
-## DD10 Mode Test Cases
+## DIDI Mode Test Cases
 
 ### Test Case 3: Business Strategy Research
 **Input:**
-- Mode: DD10
+- Mode: DIDI
 - Topic: "AI-powered customer service platforms"
-- Modules: All DD10 modules
+- Modules: All DIDI modules
 
 **Expected Output:**
 - Deep analysis across all 10 research dimensions
@@ -59,8 +59,8 @@
 - Topic: "Sustainable fashion brand positioning"
 - Modules: 
   - foundational_research (DARA)
-  - deep_intelligence (DD10)
-  - deep_synthesis (DD10)
+  - deep_intelligence (DIDI)
+  - deep_synthesis (DIDI)
   - strategic_synthesis (DARA)
 
 **Expected Output:**

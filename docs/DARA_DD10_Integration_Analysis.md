@@ -1,4 +1,4 @@
-# DARA + DD10 Integration Analysis
+# DARA + DIDI Integration Analysis
 
 ## Redundancy Assessment
 
@@ -10,7 +10,7 @@
 4. **Simulated Inquiry** - Survey generation + persona responses
 5. **Strategic Synthesis** - Strategic recommendations
 
-### DD10 Modules (Enhancement Tools)
+### DIDI Modules (Enhancement Tools)
 
 1. **Complete Deep Research Agent** - All-in-one research (6-phase process)
 2. **Deep Reasoning** - Multi-step logical analysis
@@ -26,7 +26,7 @@
 
 ### Redundancy Matrix
 
-| DARA Module | Overlaps With DD10 | Redundancy Level |
+| DARA Module | Overlaps With DIDI | Redundancy Level |
 |-------------|-------------------|------------------|
 | Foundational Research | Deep Intelligence | HIGH - Both gather information |
 | Audience Segmentation | Deep Signal Detection | MEDIUM - Both identify patterns |
@@ -34,7 +34,7 @@
 | Simulated Inquiry | N/A | LOW - Unique to DARA |
 | Strategic Synthesis | Deep Synthesis | HIGH - Both synthesize insights |
 
-| DD10 Module | Overlaps With DARA | Value Add to DARA |
+| DIDI Module | Overlaps With DARA | Value Add to DARA |
 |-------------|-------------------|-------------------|
 | Complete Deep Research Agent | Foundational Research | Can provide richer baseline data |
 | Deep Reasoning | N/A | Validates persona logic |
@@ -53,13 +53,13 @@
 ### The Problem
 
 **Current Setup:**
-- User chooses between DARA mode OR DD10 mode
+- User chooses between DARA mode OR DIDI mode
 - 16 total modules visible
 - Unclear when to use what
 - High cognitive load
 
 **User Confusion:**
-- "Do I need DD10 if I'm doing DARA?"
+- "Do I need DIDI if I'm doing DARA?"
 - "Which modules should I select?"
 - "Is this redundant?"
 
@@ -67,7 +67,7 @@
 
 **User sees:** One primary workflow (DARA) with optional enhancements
 
-**Behind the scenes:** DD10 modules are positioned as:
+**Behind the scenes:** DIDI modules are positioned as:
 1. **Pre-research tools** (gather baseline data)
 2. **Post-research tools** (validate/deepen findings)
 3. **Quality assurance** (ensure accuracy)
@@ -147,7 +147,7 @@ Select enhancement modules to run on this report:
 [Run Selected Enhancements]
 ```
 
-**Behind the scenes:** User is selecting DD10 modules to run ON the DARA report
+**Behind the scenes:** User is selecting DIDI modules to run ON the DARA report
 
 #### Step 6: Iterative Deepening
 ```
@@ -185,7 +185,7 @@ Module 5: Strategic Synthesis
 DARA Report (Artifact)
 ```
 
-**DD10 Enhancement (User-Selected):**
+**DIDI Enhancement (User-Selected):**
 ```
 DARA Report (Artifact)
     ↓
@@ -206,7 +206,7 @@ A persistent research document that grows over time.
 
 **How it works:**
 1. DARA generates initial report → Saved as Artifact v1.0
-2. User runs DD10 enhancements → Results appended → Artifact v1.1
+2. User runs DIDI enhancements → Results appended → Artifact v1.1
 3. User runs more enhancements → Results appended → Artifact v1.2
 4. User can export any version
 
@@ -230,7 +230,7 @@ A persistent research document that grows over time.
     {
       "version": "1.1",
       "timestamp": "2026-01-15T10:40:00Z",
-      "modules": ["dd10_quality_review"],
+      "modules": ["didi_quality_review"],
       "content": {...}
     }
   ]
@@ -246,7 +246,7 @@ A persistent research document that grows over time.
 - Linear, always runs in sequence
 - Produces the primary artifact
 
-**DD10 (Enhancement Layer):**
+**DIDI (Enhancement Layer):**
 - Complete Deep Research Agent (pre-research only)
 - Deep Quality Review (post-research validation)
 - Deep Signal Detection (post-research pattern analysis)
@@ -274,7 +274,7 @@ These modules can still be used internally by the Complete Deep Research Agent, 
 /backend
   /agents
     dara_agent.js          # Handles DARA workflow
-    dd10_agent.js          # Handles DD10 enhancements
+    didi_agent.js          # Handles DIDI enhancements
     artifact_manager.js    # Manages research artifacts
   /modules
     /dara
@@ -283,7 +283,7 @@ These modules can still be used internally by the Complete Deep Research Agent, 
       persona_generation.js
       simulated_inquiry.js
       strategic_synthesis.js
-    /dd10
+    /didi
       complete_research_agent.js
       quality_review.js
       signal_detection.js
@@ -353,12 +353,12 @@ Response:
 ## Frontend Changes Required
 
 ### Landing Page
-- Remove "DD10 Mode" card
+- Remove "DIDI Mode" card
 - Keep "DARA" as primary CTA
 - Add "How It Works" explainer
 
 ### Dashboard
-- Remove DD10 module cards from sidebar
+- Remove DIDI module cards from sidebar
 - Keep DARA as primary workflow
 - Add "Enhancement Tools" section (collapsed by default)
 
@@ -382,7 +382,7 @@ Response:
 
 ✅ **Simplifies user experience:** One primary workflow, optional enhancements
 
-✅ **Eliminates redundancy:** No overlap between DARA and DD10 in user-facing interface
+✅ **Eliminates redundancy:** No overlap between DARA and DIDI in user-facing interface
 
 ✅ **Enables iterative deepening:** Artifact system supports professional research workflows
 

@@ -179,7 +179,7 @@ Our serverless functions will automatically have access to this variable via `pr
 ## 6. Deployment Process
 
 1.  **Connect to GitHub:** Connect your Vercel account to your GitHub repository.
-2.  **Import Project:** Import the `DD10-DARA` repository into Vercel.
+2.  **Import Project:** Import the `DIDI-DARA` repository into Vercel.
 3.  **Configure Build:** Vercel will automatically detect the Next.js framework and configure the build settings.
 4.  **Deploy:** Click "Deploy". Vercel will build and deploy your application.
 

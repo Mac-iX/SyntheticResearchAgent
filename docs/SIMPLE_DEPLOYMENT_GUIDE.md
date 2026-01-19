@@ -22,12 +22,12 @@ Think of it like this: v0 is your designer, GitHub is your filing cabinet, and V
 
 ### Step 2: Add Frontend to GitHub
 
-1. Create a new folder in your DD10-DARA repo: `/frontend`
+1. Create a new folder in your DIDI-DARA repo: `/frontend`
 2. Paste the v0 code into `/frontend`
 3. Commit and push to GitHub:
 
 ```bash
-cd DD10-DARA
+cd DIDI-DARA
 git add frontend/
 git commit -m "Add v0 frontend"
 git push origin main
@@ -37,7 +37,7 @@ git push origin main
 
 1. Go to [vercel.com](https://vercel.com)
 2. Click "New Project"
-3. Import your `DD10-DARA` GitHub repo
+3. Import your `DIDI-DARA` GitHub repo
 4. Vercel automatically detects it's a Next.js app
 5. Add your environment variable:
    - Key: `OPENAI_API_KEY`

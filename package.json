@@ -1,7 +1,7 @@
 {
-  "name": "dd10-dara-agent",
+  "name": "dara-didi-agent",
   "version": "1.0.0",
-  "description": "Deep Diligent Agent - Modular AI research toolkit combining DARA and DD10",
+  "description": "Deep Diligent Agent - Modular AI research toolkit combining DARA and DIDI",
   "main": "interface/cli.js",
   "type": "module",
   "scripts": {

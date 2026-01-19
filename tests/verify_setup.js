@@ -6,7 +6,7 @@ import { AgentRouter } from '../core/agent_router.js';
 import { PromptEngine } from '../core/prompt_engine.js';
 import { ResponseParser } from '../core/response_parser.js';
 
-console.log('🔍 Verifying DD10/DARA Agent Setup...\n');
+console.log('🔍 Verifying DIDI/DARA Agent Setup...\n');
 
 // Test 1: Router
 console.log('✓ Testing AgentRouter...');

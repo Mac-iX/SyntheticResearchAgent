@@ -28,8 +28,8 @@ Welcome to **DARA & DIDI**, a modular AI-powered research platform designed to d
 ### Installation
 
 ```bash
-git clone https://github.com/Mac-iX/DD10-DARA.git
-cd DD10-DARA
+git clone https://github.com/Mac-iX/DARA-DIDI.git
+cd DARA-DIDI
 npm install
 ```
 
@@ -57,7 +57,7 @@ Follow the prompts to:
 ## 📁 Project Structure
 
 ```
-DD10-DARA/
+DARA-DIDI/
 ├── core/                    # Core modules
 │   ├── agent_router.js      # Routes requests to appropriate modules
 │   ├── prompt_engine.js     # Loads and manages prompt templates

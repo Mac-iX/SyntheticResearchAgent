@@ -7,7 +7,7 @@
 
 This protocol adapts the Apex Memory Synthesis framework for the DARA & DIDI ecosystem. It provides a mechanism for creating, storing, and iteratively enhancing research "artifacts"—persistent documents that evolve as the user applies different analytical lenses.
 
-## Rebranding: DD10 is now DIDI
+## Rebranding: DIDI is now DIDI
 
 - **Name:** DIDI (Deep Impact Data Illumination)
 - **Purpose:** A suite of enhancement modules used to validate, deepen, and extract further insights from a core DARA report.

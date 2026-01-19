@@ -1,12 +1,12 @@
-# Ethical Use Disclaimer for DD10/DARA
+# Ethical Use Disclaimer for DIDI/DARA
 
 **Last Updated:** January 15, 2026
 
-This document outlines the ethical principles that govern the use of the Deep Diligent Agent (DD10/DARA) platform ("the Service"), provided by Quality Creative Consulting, LLC.
+This document outlines the ethical principles that govern the use of the Deep Diligent Agent (DIDI/DARA) platform ("the Service"), provided by Quality Creative Consulting, LLC.
 
 ## Our Philosophy
 
-We believe that with great power comes great responsibility. The DD10/DARA platform is a powerful tool for research and analysis, and we are committed to ensuring its use promotes transparency, fairness, and human well-being.
+We believe that with great power comes great responsibility. The DIDI/DARA platform is a powerful tool for research and analysis, and we are committed to ensuring its use promotes transparency, fairness, and human well-being.
 
 We acknowledge the ongoing ethical conversations surrounding AI and advocate for the responsible and transparent use of these tools. We encourage every user of our Service to contemplate how to use these hyper-productive intelligent tools with empathy and a commitment to not corrupt the journey of other conscious human beings.
 

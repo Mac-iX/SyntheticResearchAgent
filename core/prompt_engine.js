@@ -19,7 +19,7 @@ export class PromptEngine {
   /**
    * Load a prompt template from the docs folder
    * @param {string} moduleName - Name of the module
-   * @param {string} mode - DARA or DD10
+   * @param {string} mode - DARA or DIDI
    * @returns {string} - The prompt template
    */
   loadPromptTemplate(moduleName, mode) {
@@ -49,14 +49,14 @@ export class PromptEngine {
    * Extract a specific module's prompt from the documentation
    * @param {string} content - Full document content
    * @param {string} moduleName - Name of the module to extract
-   * @param {string} mode - DARA or DD10
+   * @param {string} mode - DARA or DIDI
    * @returns {string} - Extracted prompt
    */
   extractModulePrompt(content, moduleName, mode) {
     if (mode === 'dara') {
       return this.extractDARAModule(content, moduleName);
     } else {
-      return this.extractDD10Module(content, moduleName);
+      return this.extractDIDIModule(content, moduleName);
     }
   }
 
@@ -86,9 +86,9 @@ export class PromptEngine {
   }
 
   /**
-   * Extract DD10 module prompt
+   * Extract DIDI module prompt
    */
-  extractDD10Module(content, moduleName) {
+  extractDIDIModule(content, moduleName) {
     // Special case for the Complete Deep Research Agent
     if (moduleName === 'deep_research_complete') {
       const startIndex = content.indexOf('## Complete Deep Research Agent');
@@ -127,7 +127,7 @@ export class PromptEngine {
   /**
    * Build the complete prompt chain for a sequence of modules
    * @param {Array} moduleSequence - Array of module names
-   * @param {string} mode - DARA or DD10
+   * @param {string} mode - DARA or DIDI
    * @param {Object} input - User input to inject into prompts
    * @param {string} previousOutput - Output from previous module (for chaining)
    * @returns {string} - Complete assembled prompt

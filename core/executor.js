@@ -61,7 +61,7 @@ export class Executor {
    * Execute a multi-stage prompt chain with intermediate outputs
    * @param {Array} moduleSequence - Array of module names
    * @param {PromptEngine} promptEngine - Instance of PromptEngine
-   * @param {string} mode - DARA or DD10
+   * @param {string} mode - DARA or DIDI
    * @param {Object} input - User input
    * @param {Object} metadata - Session metadata
    * @returns {Promise<Object>} - Object containing all module outputs

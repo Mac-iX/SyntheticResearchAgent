@@ -22,7 +22,7 @@ class CLI {
 
   async start() {
     console.log(chalk.cyan.bold('\n╔════════════════════════════════════════╗'));
-    console.log(chalk.cyan.bold('║   Deep Diligent Agent (DD10/DARA)     ║'));
+    console.log(chalk.cyan.bold('║   Deep Diligent Agent (DARA & DIDI)     ║'));
     console.log(chalk.cyan.bold('╚════════════════════════════════════════╝\n'));
 
     const { action } = await inquirer.prompt([
@@ -32,7 +32,7 @@ class CLI {
         message: 'What would you like to do?',
         choices: [
           { name: '🔍 Run DARA Mode (Audience Research)', value: 'dara' },
-          { name: '🧠 Run DD10 Mode (Deep Research)', value: 'dd10' },
+          { name: '🧠 Run DIDI Mode (Deep Research)', value: 'didi' },
           { name: '⚙️  Custom Mode (Select Modules)', value: 'custom' },
           { name: '❌ Exit', value: 'exit' }
         ]
@@ -66,7 +66,7 @@ class CLI {
         }
       ]);
       input = { ...input, ...answers };
-    } else if (mode === 'dd10') {
+    } else if (mode === 'didi') {
       const answers = await inquirer.prompt([
         {
           type: 'input',
@@ -77,10 +77,10 @@ class CLI {
         {
           type: 'checkbox',
           name: 'modules',
-          message: 'Select DD10 modules to run (or press Enter for all):',
+          message: 'Select DIDI modules to run (or press Enter for all):',
           choices: [
             { name: '🌟 Complete Deep Research Agent (All-in-One) - Recommended for comprehensive research', value: 'deep_research_complete' },
-            new inquirer.Separator('--- Individual Modules ---'),
+            new inquirer.Separator('--- DIDI Individual Modules ---'),
             { name: 'Deep Reasoning - Multi-step logical analysis', value: 'deep_reasoning' },
             { name: 'Deep Interpretation - Context and intent understanding', value: 'deep_interpretation' },
             { name: 'Deep Intelligence - Information gathering and verification', value: 'deep_intelligence' },
@@ -108,24 +108,24 @@ class CLI {
           name: 'modules',
           message: 'Select modules to run:',
           choices: [
-            { name: '🌟 DD10: Complete Deep Research Agent (All-in-One)', value: 'deep_research_complete' },
+            { name: '🌟 DIDI: Complete Deep Research Agent (All-in-One)', value: 'deep_research_complete' },
             new inquirer.Separator('--- DARA Modules ---'),
             { name: 'DARA: Foundational Research', value: 'foundational_research' },
             { name: 'DARA: Audience Segmentation', value: 'audience_segmentation' },
             { name: 'DARA: Persona Generation', value: 'persona_generation' },
             { name: 'DARA: Simulated Inquiry', value: 'simulated_inquiry' },
             { name: 'DARA: Strategic Synthesis', value: 'strategic_synthesis' },
-            new inquirer.Separator('--- DD10 Individual Modules ---'),
-            { name: 'DD10: Deep Reasoning', value: 'deep_reasoning' },
-            { name: 'DD10: Deep Interpretation', value: 'deep_interpretation' },
-            { name: 'DD10: Deep Intelligence', value: 'deep_intelligence' },
-            { name: 'DD10: Deep Storytelling', value: 'deep_storytelling' },
-            { name: 'DD10: Deep Quality Review', value: 'deep_quality_review' },
-            { name: 'DD10: Deep Looping', value: 'deep_looping' },
-            { name: 'DD10: Deep Signal Detection', value: 'deep_signal_detection' },
-            { name: 'DD10: Deep Synthesis', value: 'deep_synthesis' },
-            { name: 'DD10: Deep Structure', value: 'deep_structure' },
-            { name: 'DD10: Deep Aesthetics', value: 'deep_aesthetics' }
+            new inquirer.Separator('--- DIDI Individual Modules ---'),
+            { name: 'DIDI: Deep Reasoning', value: 'deep_reasoning' },
+            { name: 'DIDI: Deep Interpretation', value: 'deep_interpretation' },
+            { name: 'DIDI: Deep Intelligence', value: 'deep_intelligence' },
+            { name: 'DIDI: Deep Storytelling', value: 'deep_storytelling' },
+            { name: 'DIDI: Deep Quality Review', value: 'deep_quality_review' },
+            { name: 'DIDI: Deep Looping', value: 'deep_looping' },
+            { name: 'DIDI: Deep Signal Detection', value: 'deep_signal_detection' },
+            { name: 'DIDI: Deep Synthesis', value: 'deep_synthesis' },
+            { name: 'DIDI: Deep Structure', value: 'deep_structure' },
+            { name: 'DIDI: Deep Aesthetics', value: 'deep_aesthetics' }
           ],
           validate: (value) => value.length > 0 || 'Select at least one module'
         }

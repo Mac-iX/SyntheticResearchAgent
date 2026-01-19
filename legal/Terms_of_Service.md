@@ -1,8 +1,8 @@
-# Terms of Service for DD10/DARA
+# Terms of Service for DIDI/DARA
 
 **Last Updated:** January 15, 2026
 
-Welcome to the Deep Diligent Agent (DD10/DARA) platform ("the Service"), provided by Quality Creative Consulting, LLC ("we," "us," or "our"). By accessing or using our Service, you agree to be bound by these Terms of Service ("Terms").
+Welcome to the Deep Diligent Agent (DIDI/DARA) platform ("the Service"), provided by Quality Creative Consulting, LLC ("we," "us," or "our"). By accessing or using our Service, you agree to be bound by these Terms of Service ("Terms").
 
 ## 1. Acceptance of Terms
 
