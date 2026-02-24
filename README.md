@@ -146,8 +146,8 @@ MIT License - See LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
-Built with insights from Vanderbilt's Deep Research AI course and expanded through extensive prompt engineering research.
+Built with insights from extensive prompt engineering research.
 
 ---
 
-**Built by Mac | Quality Creative Consulting, LLC**
+**Built by Mac Carter | Quality Creative Consulting, LLC**
