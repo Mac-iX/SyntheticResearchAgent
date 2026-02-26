@@ -23,35 +23,52 @@ export function ProcessingStatus() {
   ]
 
   useEffect(() => {
-    // Simulate processing progress
-    const stepDuration = 3000 // 3 seconds per step
-    const progressInterval = 50
+    const sessionId = window.location.pathname.split('/')[2]
+    let pollCount = 0
+    const maxPolls = 60 // 2 minutes max
 
-    const progressTimer = setInterval(() => {
-      setProgress((prev) => {
-        const increment = (100 / steps.length / stepDuration) * progressInterval
-        const newProgress = Math.min(prev + increment, 100)
-
-        // Move to next step when reaching milestones
-        const stepProgress = (100 / steps.length) * (currentStep + 1)
-        if (newProgress >= stepProgress && currentStep < steps.length - 1) {
-          setCurrentStep((prev) => prev + 1)
+    const pollResearch = setInterval(async () => {
+      pollCount++
+      
+      try {
+        const response = await fetch(`/api/research?sessionId=${sessionId}`)
+        const data = await response.json()
+        
+        if (data.artifact && data.artifact.status === 'complete') {
+          clearInterval(pollResearch)
+          
+          // Save to localStorage
+          const stored = localStorage.getItem('research_artifacts') || '{}'
+          const artifacts = JSON.parse(stored)
+          artifacts[sessionId] = {
+            id: sessionId,
+            topic: data.artifact.metadata?.topic || 'Research',
+            date: new Date().toISOString(),
+            versions: 1,
+            artifact: data.artifact
+          }
+          localStorage.setItem('research_artifacts', JSON.stringify(artifacts))
+          
+          router.push(`/research/${sessionId}`)
+        } else {
+          // Update progress based on completed modules
+          const completed = data.artifact?.modules?.filter((m: any) => m.status === 'complete').length || 0
+          setProgress((completed / 5) * 100)
+          setCurrentStep(Math.min(completed, 4))
         }
+      } catch (error) {
+        console.error('Poll error:', error)
+      }
+      
+      if (pollCount >= maxPolls) {
+        clearInterval(pollResearch)
+        alert('Research timed out. Please try again.')
+        router.push('/dashboard')
+      }
+    }, 2000) // Poll every 2 seconds
 
-        // Redirect when complete
-        if (newProgress >= 100) {
-          clearInterval(progressTimer)
-          setTimeout(() => {
-            router.push("/research/demo-123")
-          }, 1000)
-        }
-
-        return newProgress
-      })
-    }, progressInterval)
-
-    return () => clearInterval(progressTimer)
-  }, [currentStep, router])
+    return () => clearInterval(pollResearch)
+  }, [router])
 
   const estimatedTimeRemaining = Math.max(0, Math.ceil(((100 - progress) / 100) * 15)) // ~15 seconds total
 

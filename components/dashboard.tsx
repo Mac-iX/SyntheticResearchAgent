@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Brain, User, Menu, X, Plus, FolderOpen, Settings, Sparkles, FileText } from "lucide-react"
@@ -11,12 +11,16 @@ export function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [showExplainer, setShowExplainer] = useState(false)
 
-  // Mock recent artifacts
-  const recentArtifacts = [
-    { id: "1", topic: "Coffee shop franchise in Austin, Texas", date: "2 hours ago", versions: 3 },
-    { id: "2", topic: "SaaS product for legal professionals", date: "Yesterday", versions: 1 },
-    { id: "3", topic: "E-commerce for sustainable fashion", date: "3 days ago", versions: 5 },
-  ]
+  // Load real artifacts from localStorage
+  const [recentArtifacts, setRecentArtifacts] = useState<any[]>([])
+
+  useEffect(() => {
+    const stored = localStorage.getItem('research_artifacts')
+    if (stored) {
+      const artifacts = JSON.parse(stored)
+      setRecentArtifacts(Object.values(artifacts).slice(0, 3))
+    }
+  }, [])
 
   return (
     <div className="min-h-screen bg-background flex">

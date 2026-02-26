@@ -22,11 +22,31 @@ export function NewResearch() {
     context: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // In real app, this would create a research session
-    const mockId = "demo-" + Date.now()
-    router.push(`/research/${mockId}/processing`)
+    
+    const sessionId = `session_${Date.now()}`
+    
+    try {
+      const response = await fetch('/api/research', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sessionId,
+          topic: formData.topic,
+          region: formData.region || 'General',
+          context: formData.context,
+          mode: 'dara'
+        })
+      })
+      
+      if (!response.ok) throw new Error('Research failed')
+      
+      router.push(`/research/${sessionId}/processing`)
+    } catch (error) {
+      console.error('Research error:', error)
+      alert('Failed to start research. Please try again.')
+    }
   }
 
   return (
