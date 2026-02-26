@@ -170,4 +170,4 @@ class MemoryProtocol {
 }
 
 // Export for use in other modules
-module.exports = MemoryProtocol;
+export { MemoryProtocol };
